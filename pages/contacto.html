@@ -5,13 +5,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../css/style.css" />
   <title>Caballo Criollo Colombiano</title>
 </head>
 
@@ -25,15 +21,8 @@
         </div>
         <div class="col-5">
           <div class="container-fluid">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -45,19 +34,13 @@
                   <a class="nav-link" href="./andares.html">Andares </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./contacto.html"
-                    >Contacto</a
-                  >
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./historia.html"
-                    >Historia</a
-                  >
+                  <a class="nav-link" href="./historia.html">Historia</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./nosotros.html"
-                    >Nosotros</a
-                  >
+                  <a class="nav-link" href="./nosotros.html">Nosotros</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./galeria.html">Galeria</a>
@@ -70,93 +53,76 @@
     </nav>
   </header>
 
-  <main>
-    <h2 class="page__title">Contacto</h2>
+  <main class="m-3">
+    <h2 class="page__title"> Contacto </h2>
 
-    <div class="contenedor-contacto">
-      <div class="contenedor-form-contacto">
-        <form class="formulario-contacto">
+    <div class="row ">
+      <div class="col-12 col-lg-6 ">
+        <form>
           <div class="form-input">
             <label for="nombre-usuario">Nombre y apellido:</label>
-            <input type="text" id="nombre-usuario" name="nombre-usuario" />
+            <input class="form-input" type="text" id="nombre-usuario" name="nombre-usuario" />
           </div>
 
           <div class="form-input">
             <label for="email-usuario">Email:</label>
-            <input type="email" id="email-usuario" name="email-usuario" />
+            <input class="form-input" type="email" id="email-usuario" name="email-usuario" />
           </div>
 
           <div class="form-input">
             <label for="mensaje-usuario">Mensaje:</label>
-            <textarea cols="30" rows="10" id="mensaje-usuario" name="mensaje-usuario"></textarea>
+            <textarea class="form-input" cols="30" rows="10" id="mensaje-usuario" name="mensaje-usuario"></textarea>
           </div>
 
-          <div class="form-input">
-            <label for="valoracion-usuario">Valore nuestra web</label>
-            <select name="valoracion-usuario" id="valoracion-usuario">
-              <option value="valoracion-1">1</option>
-              <option value="valoracion-2">2</option>
-              <option value="valoracion-3">3</option>
-              <option value="valoracion-3">4</option>
-              <option value="valoracion-3">5</option>
-            </select>
-          </div>
-
-          <button class="btn type=" submit" />
+          <button class="btn" type=" submit" />
           Contactenos
           </button>
         </form>
 
       </div>
-      <div>
+      <div class="col-12 col-lg-6">
         <h2>Mapa</h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15905.854789460827!2d-74.068457!3d4.6891929!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdc6d479dec967d21!2sFederaci%C3%B3n%20Nacional%20Colombiana%20de%20Asociaciones%20Equinas%20Fedequinas!5e0!3m2!1ses-419!2sco!4v1658273090922!5m2!1ses-419!2sco"
-          width="700" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+          width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
     </div>
   </main>
   <footer>
-    <div>
-      <div>
-        <h2>Caballo Criollo Colombiano</h2>
+    <div class="row">
+      <div class="col-12 col-md-5">
+        <h3>Caballo Criollo Colombiano</>
       </div>
-      <div class="container-redes-sociales">
+
+      <div class="col-6 col-sm-4">
         <div>
-          <img
-            class="red-icon"
-            src="../img/social-media/facebook.png"
-            alt="Facebook"
-          />
+          <a href="contacto.html">Contacto</a>
         </div>
         <div>
-          <img
-            class="red-icon"
-            src="../img/social-media/instagram.png"
-            alt="Instagram"
-          />
-        </div>
-        <div>
-          <img
-            class="red-icon"
-            src="../img/social-media/youtube.png"
-            alt="YouTube"
-          />
+          <a href="nosotros.html">Nosotros</a>
         </div>
       </div>
+      <div class="col-6 col-sm-2">
+        <div class="row">
+          <div class="col-4">
+            <img class="red-icon" src="../img/social-media/facebook.png" alt="Facebook" />
+          </div>
+          <div class="col-4">
+            <img class="red-icon" src="../img/social-media/instagram.png" alt="Instagram" />
+          </div>
+          <div class="col-4">
+            <img class="red-icon" src="../img/social-media/youtube.png" alt="YouTube" />
+          </div>
+        </div>
+      </div>
     </div>
-    <div >
-        <a href="./pages/contacto.html">Contacto</a>
-    </div>
-    <div>
-      <a href="./pages/nosotros.html">Nosotros</a>
-    </div>
-    <div class="copyright">
-      Desarrollado por Sebastian Perez Rios 2022
-    </div>
+    <div class="copyright">Desarrollado por Sebastian Perez Rios 2022</div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

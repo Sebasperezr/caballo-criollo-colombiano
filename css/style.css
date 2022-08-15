@@ -1,18 +1,13 @@
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  text-decoration: none;
-  list-style-type: none;
 }
-.container-fluid{
+.container-fluid {
   padding: 0;
 }
 .center {
   justify-self: center;
   align-self: center;
+  align-items: centerw;
 }
 
 .text-center {
@@ -35,10 +30,6 @@ header {
   color: white;
 }
 
-
-
-
-
 /* --------------- Baner ------------------ */
 
 .baner {
@@ -51,14 +42,11 @@ header {
 
 /* ---------------- INDEX CONTENEDORES Y CARDS   ------------------ */
 
-
-
-
 .card {
   min-width: 400px;
   height: 500px;
   padding: 10px;
-  margin: 10px;
+
   contain: content;
   border: 0ch;
 }
@@ -71,64 +59,29 @@ header {
 /* ---- ANDARES ----*/
 .video-andares {
   width: 100%;
-  height: 500px;
-}
-
-  .container-andares {
-    margin-top: 10px;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    overflow-x: scroll;
-  }
-
-.inicio-andares {
-  margin-top: 10px;
-  padding: 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: 300px;
 }
 
 .container-andares {
   margin-top: 10px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
+  padding: 35px;
 }
 
-.andares-description {
-  width: 100%;
-  text-align: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
+.inicio-andares {
+  margin-top: 10px;
+  padding: 40px;
 }
+
 /* ---- CONTACTO ----*/
 
 label {
   display: flex;
 }
 
-
-.contenedor-contacto {
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
-  justify-content: center;
-}
-
-.contenedor-form-contacto {
-  width: 100%;
-  border: 2px solid;
-  border-color: black;
-  padding-left: 250px;
-  padding-top: 25px;
-}
-
 .form-input {
   font-size: 1.2em;
-  margin: 3.5px;
+width: 100%;
+  border-radius: 5px;
 }
 
 /*------ HISTORIA --------*/
@@ -138,38 +91,6 @@ label {
   height: 500px;
 }
 
-
-  .contenedor-imagenes-historia {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-right: 20px;
-    overflow: scroll;
-  }
-
-.contenedor-articulos-historia {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-  margin-bottom: 40px;
-  margin-right: 20px;
-}
-.articulos-historia {
-  justify-self: center;
-  align-self: center;
-}
-.contenedor-imagenes-historia {
-  display: flex;
-  flex-direction: column;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  margin-right: 20px;
-  overflow: scroll;
-}
 
 .card-img-historia {
   width: 100%;
@@ -182,58 +103,23 @@ label {
   width: 100%;
   height: 500px;
 }
-
-  .contenedor-imagenes-nosotros {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-right: 20px;
-  }
-
-.contenedor-articulos-nosotros {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-  margin-bottom: 40px;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-.contenedor-imagenes-nosotros {
-  display: flex;
-  flex-direction: column;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  margin-right: 20px;
-}
-.articulos-nosotros {
-  justify-self: center;
-  align-self: center;
-}
 .card-img-nosotros {
   width: 100%;
-  height: 300px;
+  height: 500px;
 }
 
 /* ---- GALERIA ----*/
 
 .view-galeria {
   width: 100%;
-
-  padding-left: 100px;
-  padding-right: 100px;
 }
 .view-img-galleria {
   width: 100%;
 }
 
-
 .card-img-galleria {
-  width: 100%;
-  height: 300px;
+  width: 90%;
+  height: 100px;
 }
 
 /* ---- TEXTOS ----*/
@@ -270,16 +156,12 @@ label {
 /* ------------ FOOTER -------------- */
 
 footer {
-  
   background-color: black;
   color: white;
   padding: 10px;
   justify-content: center;
   align-self: center;
 }
-
-
-
 
 .red-icon {
   height: 30px;
@@ -291,8 +173,6 @@ footer a {
 }
 
 .copyright {
-
-margin-top: 15px;
+  margin-top: 15px;
   text-align: center;
-
 }
