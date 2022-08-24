@@ -7,7 +7,7 @@ html {
 .center {
   justify-self: center;
   align-self: center;
-  align-items: centerw;
+  align-items: center;
 }
 
 .text-center {
