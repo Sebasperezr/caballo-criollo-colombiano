@@ -1,0 +1,22 @@
+{
+  "name": "caballo-criollo-colombiano-perez",
+  "version": "1.0.0",
+  "description": "Desarrollo Wen CoderHouse",
+  "main": "index.js",
+  "scripts": {
+    "sass-start": "sass --watch scss/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebastianP14/caballo-criollo-colombiano.git"
+  },
+  "author": "Sebastian Perez Rios",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SebastianP14/caballo-criollo-colombiano/issues"
+  },
+  "homepage": "https://github.com/SebastianP14/caballo-criollo-colombiano#readme",
+  "dependencies": {
+    "sass": "^1.54.8"
+  }
+}
