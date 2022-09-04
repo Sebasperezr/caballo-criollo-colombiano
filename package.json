@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/SebastianP14/caballo-criollo-colombiano#readme",
   "dependencies": {
+    "bootstrap": "^5.2.0",
     "sass": "^1.54.8"
   }
 }

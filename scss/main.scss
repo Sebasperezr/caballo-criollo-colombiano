@@ -1,184 +1,205 @@
-@import"./utils/variables.scss";
+@import "./utils/variables.scss";
 
 html {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
-  .container-fluid {
-    padding: 0;
-  }
-  .center {
-    justify-self: center;
-    align-self: center;
-    align-items: center;
-  }
-  
-  .text-center {
-    text-align: center;
-  }
-  .width-100 {
-    width: 100%;
-  }
-  
-  .width-80 {
-    width: 80%;
-  }
-  
-  /* =============== COMPONENTES ================ */
-  
-  /* ---------- Header ---------------- */
-  
-  header {
-    background-color: black;
-    color: white;
-  }
-  
-  /* --------------- Baner ------------------ */
-  
-  .baner {
-    height: 75vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #000 url(../img/baner.jpg) center / cover no-repeat fixed;
-  }
-  
-  /* ---------------- INDEX CONTENEDORES Y CARDS   ------------------ */
-  
-  .card {
-    min-width: 400px;
-    height: 500px;
-    padding: 10px;
-    contain: content;
-    border: 0ch;
-    &__img {
-        margin-top: 10px;
-        width: 100%;
-      }
-  }
-  
- 
-  
-  /* ---- ANDARES ----*/
-  .video-andares {
-    width: 100%;
-    height: 300px;
-  }
-  
-  .container-andares {
-    margin-top: 10px;
-    padding: 35px;
-  }
-  
-  .inicio-andares {
-    margin-top: 10px;
-    padding: 40px;
-  }
-  
-  /* ---- CONTACTO ----*/
-  
-  label {
-    display: flex;
-  }
-  
-  .form-input {
-    font-size: 1.2em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container-fluid {
+  padding: 0;
+}
+
+@mixin justify-align($position: center) {
+  justify-self: $position;
+  align-self: $position;
+  align-items: $position;
+}
+
+.center {
+  @include justify-align;
+}
+
+.text-center {
+  text-align: center;
+}
+.width-100 {
   width: 100%;
-    border-radius: 5px;
-  }
-  
-  /*------ HISTORIA --------*/
-  
-  .video-historia {
+}
+
+.width-80 {
+  width: 80%;
+}
+.video {
+  width: 100%;
+  height: 100px;
+}
+
+/* =============== COMPONENTES ================ */
+
+/* ---------- Header ---------------- */
+
+header {
+  background-color: $color-dark;
+  color: $color-ligh;
+}
+
+/* --------------- Baner ------------------ */
+
+.baner {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $color-dark url(../img/baner.jpg) center / cover no-repeat fixed;
+}
+
+/* ---------------- INDEX CONTENEDORES Y CARDS   ------------------ */
+
+.card {
+  min-width: 400px;
+  height: 500px;
+  padding: 10px;
+  contain: content;
+  border: 0ch;
+  &__img {
+    margin-top: 10px;
     width: 100%;
-    height: 500px;
   }
-  
-  
-  .card-img-historia {
-    width: 100%;
-    height: 300px;
+}
+
+/* ---- ANDARES ----*/
+.video-andares {
+  @extend .video;
+  height: 300px;
+}
+
+.container-andares {
+  margin-top: 10px;
+  padding: 35px;
+}
+
+.inicio-andares {
+  margin-top: 10px;
+  padding: 40px;
+}
+
+/* ---- CONTACTO ----*/
+
+label {
+  display: flex;
+}
+
+.form-input {
+  font-size: 1.2em;
+  width: 100%;
+  border-radius: 5px;
+}
+
+/*------ HISTORIA --------*/
+
+.video-historia {
+  @extend .video;
+  height: 500px;
+}
+
+.card-img-historia {
+  width: 100%;
+  height: 300px;
+}
+
+/*------ Nosotros --------*/
+
+.video-nosotros {
+  @extend .video;
+  height: 500px;
+}
+.card-img-nosotros {
+  width: 100%;
+  height: 500px;
+}
+
+/* ---- GALERIA ----*/
+
+.view-galeria {
+  width: 100%;
+}
+.view-img-galleria {
+  width: 100%;
+}
+
+.card-img-galleria {
+  width: 90%;
+  height: 100px;
+}
+
+/* ---- TEXTOS ----*/
+
+.page__title {
+  text-align: center;
+  margin: 1px;
+  font-size: 2.5em;
+}
+
+/* ---- TEXTOS - INDEX - ANDARES ----*/
+
+.andares-index__title {
+  text-align: center;
+  margin: 10px;
+}
+
+/* ------------ BOTONES -------------- */
+.btn {
+  border: $color-primary 2px solid;
+  border-radius: 20px;
+  background-color: $color-primary;
+  color: $color-ligh;
+  font-size: 1.5em;
+  padding: 6px;
+  &:hover {
+    border: $color-primary 2px solid;
+    background-color: $color-ligh;
+    color: $color-primary;
   }
-  
-  /*------ Nosotros --------*/
-  
-  .video-nosotros {
-    width: 100%;
-    height: 500px;
-  }
-  .card-img-nosotros {
-    width: 100%;
-    height: 500px;
-  }
-  
-  /* ---- GALERIA ----*/
-  
-  .view-galeria {
-    width: 100%;
-  }
-  .view-img-galleria {
-    width: 100%;
-  }
-  
-  .card-img-galleria {
-    width: 90%;
-    height: 100px;
-  }
-  
-  /* ---- TEXTOS ----*/
-  
-  .page__title {
-    text-align: center;
-    margin: 1px;
-    font-size: 2.5em;
-  }
-  
-  /* ---- TEXTOS - INDEX - ANDARES ----*/
-  
-  .andares-index__title {
-    text-align: center;
-    margin: 10px;
-  }
-  
-  /* ------------ BOTONES -------------- */
-  .btn {
-    border: green 2px solid;
-    border-radius: 20px;
-    background-color: green;
-    color: white;
-    font-size: 1.5em;
-    padding: 6px;
+}
+
+.btn-redes {
+  background-color: $trasnparent;
+
+  &-facebook {
     &:hover {
-        border: green 2px solid;
-        background-color: white;
-        color: green;
-      }
+      background-color: map-get($redes, facebook);
+    }
   }
-  
- 
-  
-  /* ------------ FOOTER -------------- */
-  
-  footer {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    justify-content: center;
-    align-self: center;
-    
-    a {
-        color: white;
-      }
+  &-instagram {
+    &:hover {
+      background-color: map-get($redes, instagram);
+    }
   }
-  
-  .red-icon {
-    height: 30px;
-    width: 30px;
+  &-youtube {
+    &:hover {
+      background-color: map-get($redes, youtube);
+    }
   }
-  
- 
-  
-  .copyright {
-    margin-top: 15px;
-    text-align: center;
+}
+
+/* ------------ FOOTER -------------- */
+
+footer {
+  background-color: $color-dark;
+  color: $color-ligh;
+  padding: 10px;
+  justify-content: center;
+  align-self: center;
+
+  a {
+    color: $color-ligh;
   }
-  
+}
+
+.red-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.copyright {
+  margin-top: 15px;
+  text-align: center;
+}
