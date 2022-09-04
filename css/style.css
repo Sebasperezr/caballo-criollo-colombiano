@@ -1,9 +1,11 @@
 html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .container-fluid {
   padding: 0;
 }
+
 .center {
   justify-self: center;
   align-self: center;
@@ -13,6 +15,7 @@ html {
 .text-center {
   text-align: center;
 }
+
 .width-100 {
   width: 100%;
 }
@@ -22,35 +25,29 @@ html {
 }
 
 /* =============== COMPONENTES ================ */
-
 /* ---------- Header ---------------- */
-
 header {
   background-color: black;
   color: white;
 }
 
 /* --------------- Baner ------------------ */
-
 .baner {
   height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #000 url(../img/baner.jpg) center / cover no-repeat fixed;
+  background: #000 url(../img/baner.jpg) center/cover no-repeat fixed;
 }
 
 /* ---------------- INDEX CONTENEDORES Y CARDS   ------------------ */
-
 .card {
   min-width: 400px;
   height: 500px;
   padding: 10px;
-
   contain: content;
   border: 0ch;
 }
-
 .card__img {
   margin-top: 10px;
   width: 100%;
@@ -73,24 +70,21 @@ header {
 }
 
 /* ---- CONTACTO ----*/
-
 label {
   display: flex;
 }
 
 .form-input {
   font-size: 1.2em;
-width: 100%;
+  width: 100%;
   border-radius: 5px;
 }
 
 /*------ HISTORIA --------*/
-
 .video-historia {
   width: 100%;
   height: 500px;
 }
-
 
 .card-img-historia {
   width: 100%;
@@ -98,21 +92,21 @@ width: 100%;
 }
 
 /*------ Nosotros --------*/
-
 .video-nosotros {
   width: 100%;
   height: 500px;
 }
+
 .card-img-nosotros {
   width: 100%;
   height: 500px;
 }
 
 /* ---- GALERIA ----*/
-
 .view-galeria {
   width: 100%;
 }
+
 .view-img-galleria {
   width: 100%;
 }
@@ -123,7 +117,6 @@ width: 100%;
 }
 
 /* ---- TEXTOS ----*/
-
 .page__title {
   text-align: center;
   margin: 1px;
@@ -131,7 +124,6 @@ width: 100%;
 }
 
 /* ---- TEXTOS - INDEX - ANDARES ----*/
-
 .andares-index__title {
   text-align: center;
   margin: 10px;
@@ -146,7 +138,6 @@ width: 100%;
   font-size: 1.5em;
   padding: 6px;
 }
-
 .btn:hover {
   border: green 2px solid;
   background-color: white;
@@ -154,7 +145,6 @@ width: 100%;
 }
 
 /* ------------ FOOTER -------------- */
-
 footer {
   background-color: black;
   color: white;
@@ -162,17 +152,18 @@ footer {
   justify-content: center;
   align-self: center;
 }
+footer a {
+  color: white;
+}
 
 .red-icon {
   height: 30px;
   width: 30px;
 }
 
-footer a {
-  color: white;
-}
-
 .copyright {
   margin-top: 15px;
   text-align: center;
 }
+
+/*# sourceMappingURL=style.css.map */
