@@ -1,3 +1,4 @@
+/*-------------- COLORS ---------------*/
 html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -24,6 +25,11 @@ html {
   width: 80%;
 }
 
+.video, .video-nosotros, .video-historia, .video-andares {
+  width: 100%;
+  height: 100px;
+}
+
 /* =============== COMPONENTES ================ */
 /* ---------- Header ---------------- */
 header {
@@ -37,7 +43,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #000 url(../img/baner.jpg) center/cover no-repeat fixed;
+  background: black url(../img/baner.jpg) center/cover no-repeat fixed;
 }
 
 /* ---------------- INDEX CONTENEDORES Y CARDS   ------------------ */
@@ -55,7 +61,6 @@ header {
 
 /* ---- ANDARES ----*/
 .video-andares {
-  width: 100%;
   height: 300px;
 }
 
@@ -82,7 +87,6 @@ label {
 
 /*------ HISTORIA --------*/
 .video-historia {
-  width: 100%;
   height: 500px;
 }
 
@@ -93,7 +97,6 @@ label {
 
 /*------ Nosotros --------*/
 .video-nosotros {
-  width: 100%;
   height: 500px;
 }
 
@@ -142,6 +145,19 @@ label {
   border: green 2px solid;
   background-color: white;
   color: green;
+}
+
+.btn-redes {
+  background-color: transparent;
+}
+.btn-redes-facebook:hover {
+  background-color: #617297;
+}
+.btn-redes-instagram:hover {
+  background-color: #55acee;
+}
+.btn-redes-youtube:hover {
+  background-color: red;
 }
 
 /* ------------ FOOTER -------------- */
