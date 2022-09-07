@@ -115,6 +115,21 @@ header {
     justify-content: end;
   }
 }
+@media (max-width: 500px) {
+  .navbar-brand h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 390px) {
+  .navbar-brand h1 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 325px) {
+  .navbar-brand h1 {
+    font-size: 1rem;
+  }
+}
 .andares-index__title {
   text-align: center;
   margin: 10px;
