@@ -1,0 +1,28 @@
+.banner {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color-dark url(../img/baner.jpg) center / cover no-repeat fixed;
+  }
+
+  .page__title {
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 50px;
+    margin: 1px;
+    font-size: 3.5em;
+    background: $color-dark url(../img/Banner-title.jpg) center / cover no-repeat;
+    color: white;
+    height: 100px;
+  }
+  @media (min-width: 780px) {
+    .page__title {
+      padding-right: 150px;
+    }
+  }
+  @media (min-width: 990px) {
+    .page__title {
+      padding-right: 250px;
+    }
+  }

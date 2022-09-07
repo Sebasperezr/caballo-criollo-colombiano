@@ -1,0 +1,6 @@
+
+@mixin justify-align($position: center) {
+    justify-self: $position;
+    align-self: $position;
+    align-items: $position;
+  }

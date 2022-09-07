@@ -30,15 +30,34 @@ html {
   height: 100px;
 }
 
-/* =============== COMPONENTES ================ */
-/* ---------- Header ---------------- */
-header {
-  background-color: black;
+.btn {
+  border: green 2px solid;
+  border-radius: 20px;
+  background-color: green;
   color: white;
+  font-size: 1.5em;
+  padding: 6px;
+}
+.btn:hover {
+  border: green 2px solid;
+  background-color: white;
+  color: green;
 }
 
-/* --------------- Baner ------------------ */
-.baner {
+.btn-redes {
+  background-color: transparent;
+}
+.btn-redes-facebook:hover {
+  background-color: #617297;
+}
+.btn-redes-instagram:hover {
+  background-color: #55acee;
+}
+.btn-redes-youtube:hover {
+  background-color: red;
+}
+
+.banner {
   height: 75vh;
   display: flex;
   justify-content: center;
@@ -46,7 +65,27 @@ header {
   background: black url(../img/baner.jpg) center/cover no-repeat fixed;
 }
 
-/* ---------------- INDEX CONTENEDORES Y CARDS   ------------------ */
+.page__title {
+  text-align: right;
+  padding-top: 10px;
+  padding-right: 50px;
+  margin: 1px;
+  font-size: 3.5em;
+  background: black url(../img/Banner-title.jpg) center/cover no-repeat;
+  color: white;
+  height: 100px;
+}
+
+@media (min-width: 780px) {
+  .page__title {
+    padding-right: 150px;
+  }
+}
+@media (min-width: 990px) {
+  .page__title {
+    padding-right: 250px;
+  }
+}
 .card {
   min-width: 400px;
   height: 500px;
@@ -57,6 +96,28 @@ header {
 .card__img {
   margin-top: 10px;
   width: 100%;
+}
+
+.card-img-galleria {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+header {
+  background-color: black;
+  color: white;
+}
+
+@media (min-width: 990px) {
+  .navbar-collapse {
+    display: flex;
+    justify-content: end;
+  }
+}
+.andares-index__title {
+  text-align: center;
+  margin: 10px;
 }
 
 /* ---- ANDARES ----*/
@@ -107,60 +168,22 @@ label {
 
 /* ---- GALERIA ----*/
 .view-galeria {
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  height: 500px;
 }
 
 .view-img-galleria {
-  width: 100%;
+  width: 200px;
+  height: 200px;
 }
 
-.card-img-galleria {
-  width: 90%;
-  height: 100px;
+.view-img-galleria-principal {
+  width: 800px;
+  height: 500px;
 }
 
-/* ---- TEXTOS ----*/
-.page__title {
-  text-align: center;
-  margin: 1px;
-  font-size: 2.5em;
-}
-
-/* ---- TEXTOS - INDEX - ANDARES ----*/
-.andares-index__title {
-  text-align: center;
-  margin: 10px;
-}
-
-/* ------------ BOTONES -------------- */
-.btn {
-  border: green 2px solid;
-  border-radius: 20px;
-  background-color: green;
-  color: white;
-  font-size: 1.5em;
-  padding: 6px;
-}
-.btn:hover {
-  border: green 2px solid;
-  background-color: white;
-  color: green;
-}
-
-.btn-redes {
-  background-color: transparent;
-}
-.btn-redes-facebook:hover {
-  background-color: #617297;
-}
-.btn-redes-instagram:hover {
-  background-color: #55acee;
-}
-.btn-redes-youtube:hover {
-  background-color: red;
-}
-
-/* ------------ FOOTER -------------- */
 footer {
   background-color: black;
   color: white;

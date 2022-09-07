@@ -1,0 +1,11 @@
+header {
+    background-color: $color-dark;
+    color: $color-ligh;
+  }
+  
+  @media (min-width: 990px) {
+    .navbar-collapse {
+      display: flex;
+      justify-content: end;
+    }
+  }
