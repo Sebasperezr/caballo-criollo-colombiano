@@ -8,13 +8,15 @@
 
   .page__title {
     text-align: right;
-    padding-top: 10px;
+    padding-top: 2px;
     padding-right: 50px;
     margin: 1px;
-    font-size: 3.5em;
+    font-size: 5em;
     background: $color-dark url(../img/Banner-title.jpg) center / cover no-repeat;
     color: white;
     height: 100px;
+    font-family: 'Billion Dreams', sans-serif;
+    
   }
   @media (min-width: 780px) {
     .page__title {

@@ -13,9 +13,22 @@
   
   .container-andares {
     margin-top: 10px;
-    padding: 35px;
+    justify-content: center;
+    padding: 2px;
+    margin: 2px;
   }
-  
+
+  .andares-caballo {
+    justify-content: center;
+    text-align: center;
+  }
+
+  @media (max-width: 570px) {
+    .andares-caballo {
+     justify-content: center;
+     text-align: left;
+    }
+  }
   .inicio-andares {
     margin-top: 10px;
     padding: 40px;
@@ -43,6 +56,7 @@
   .card-img-historia {
     width: 100%;
     height: 300px;
+    object-fit: scale-down;
   }
   
   /*------ Nosotros --------*/
@@ -53,7 +67,7 @@
   }
   .card-img-nosotros {
     width: 100%;
-    height: 500px;
+    height: 300px;
   }
   
   /* ---- GALERIA ----*/

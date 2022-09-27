@@ -18,16 +18,16 @@
   }
   
   .btn {
-    border: $color-primary 2px solid;
+    border: $color-dark 2px solid;
     border-radius: 20px;
-    background-color: $color-primary;
+    background-color: $color-dark;
     color: $color-ligh;
     font-size: 1.5em;
     padding: 6px;
     &:hover {
-      border: $color-primary 2px solid;
+      border: $color-dark 2px solid;
       background-color: $color-ligh;
-      color: $color-primary;
+      color: $color-dark;
     }
   }
   
